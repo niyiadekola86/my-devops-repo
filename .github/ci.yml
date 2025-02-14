@@ -1,0 +1,13 @@
+name: CI Pipeline
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+      
+      - name: Run a Simple Command
+        run: echo "GitHub Actions is working!"
+
